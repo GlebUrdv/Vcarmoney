@@ -87,11 +87,11 @@ def get_all_liked_lists(access_token, owner_id, liked_object_id, count=1000, off
 
 User_lists_collection = []
 Final_list = {}
-i=0
+t = 0
 for item in ID_list:
-    text_id = txt_list[i]
+    text_id = txt_list[t]
     tsplit = text_id.split()
-    i += 1
+    t += 1
     emojicount = 0
     tagscount = 0
     wordcount = 0
